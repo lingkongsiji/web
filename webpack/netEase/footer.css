@@ -1,0 +1,359 @@
+body>footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 54px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(228, 228, 228);
+    z-index: 5;
+}
+
+body>footer>div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.song,
+.play,
+.function {
+    height: 54px;
+}
+
+body .song img {
+    width: 54px;
+    border-radius: 4px;
+}
+
+.song img:hover+.cover {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.cover:hover {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.song {
+    display: flex;
+}
+
+.song p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.song .name {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.song .singer {
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+div.play {
+    position: relative;
+}
+
+div.play>div {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -210px;
+}
+
+div.play ul>li {
+    float: left;
+}
+
+div.play ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    margin: auto;
+}
+
+div.play span:hover {
+    color: rgb(235, 65, 65);
+}
+
+div.play ul li:nth-of-type(3) span {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 24px;
+    background-color: rgb(243, 243, 243);
+}
+
+div.play ul li:nth-of-type(3) span:hover {
+    color: #000;
+    background-color: rgb(228, 228, 228);
+}
+
+.range {
+    width: 420px;
+    margin-top: 16px;
+    height: 6px;
+    background-color: rgb(199, 199, 199);
+}
+
+
+/* .range:hover {
+    height: 6px;
+    background-color: rgb(199, 199, 199);
+} */
+
+.range>div {
+    position: relative;
+    width: 0;
+    height: 100%;
+    background: rgb(255, 0, 0);
+}
+
+.range .thumb {
+    position: absolute;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.function {
+    width: 250px;
+}
+
+.function>div {
+    position: relative;
+    width: 100%;
+    right: 16px;
+    height: 100%;
+}
+
+.function ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-24px);
+    width: 100%;
+    height: 48px;
+}
+
+.function ul li {
+    display: block;
+    height: 100%;
+    line-height: 48px;
+    text-align: center;
+}
+
+.function ul li span {
+    width: 32px;
+    height: 32px;
+}
+
+.function ul li:nth-of-type(3):hover .volume {
+    display: block;
+}
+
+.volume {
+    display: none;
+    position: absolute;
+    bottom: 32px;
+    width: 32px;
+    height: 120px;
+    border-radius: 2px;
+    box-shadow: 0 0 8px 1px rgb(199, 199, 199);
+    background-color: #fff;
+}
+
+.volume>div {
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: 4px;
+    height: 100px;
+    background-color: rgb(141, 141, 141);
+}
+
+.volume>div>div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(235, 65, 65);
+}
+
+.volume>div>div>div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(235, 65, 65);
+}
+
+.playDetails {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 750px;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.playDetails header {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 64px;
+}
+
+.playDetails header>div {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 6fr 1fr;
+}
+
+.playDetails header>div a {
+    background-color: rgba(0, 0, 0, 0.096);
+    color: rgb(51, 51, 51);
+}
+
+.playDetails header>div .search {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+.playDetails header>div .search button {
+    color: rgb(51, 51, 51);
+}
+
+.playDetails header>div .search input {
+    color: rgb(51, 51, 51);
+}
+
+.playDetails header ul {
+    justify-self: end;
+    width: 240px;
+}
+
+.playDetails header li {
+    display: block;
+    width: 32px;
+    height: 32px;
+    float: left;
+    color: rgb(51, 51, 51);
+}
+
+.playDetails>div:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 480px;
+}
+
+.playDetails .img {
+    justify-self: end;
+    width: 200px;
+    height: 200px;
+}
+
+.playDetails .other {
+    justify-self: start;
+}
+
+.playDetails div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.lyrics {
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.lyrics h1 {
+    /* position: relative; */
+    font-size: 36px;
+    font-weight: 540;
+    overflow: hidden;
+    text-align: center;
+}
+
+.lyrics h3 {
+    text-align: center;
+    color: rgb(119, 119, 119);
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.lyrics div {
+    height: 100%;
+    overflow: auto;
+}
+
+.lyrics ul {
+    position: relative;
+}
+
+.lyrics li {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.playDetails>div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #fff;
+}
+
+.playDetails>div:nth-of-type(2) li {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: rgb(241, 241, 241) solid 1px;
+}

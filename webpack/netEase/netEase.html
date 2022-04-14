@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云音乐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: rgb(55, 55, 55);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        /* .show{display: block;} */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>网易云音乐</h3>
+        <!-- 左右箭头 -->
+        <a href="#" class="left">&lt;</a>
+        <a href="#" class="right">&gt;</a>
+        <!-- 搜索框 -->
+        <form action="" method="post">
+            <div class="search">
+                <button type="button" class="icon-search"></button>
+                <input type="text" name="" id="">
+                <div class="start_search">
+                    <p>热搜榜</p>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><span></span>
+                                <div>
+                                    <p><span class="searchWord"></span><span class="score"></span></p>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </form>
+
+        <!-- 听歌识曲 -->
+        <a href="" class="identify"><span class="icon-mic"></span></a>
+
+        <!-- 登录 -->
+        <form action="" method="post" class="login">
+            <img src="./img/nologin.jpg" alt=""><a href="javascript:;">未登录</a>
+        </form>
+        <div class="xbox hidden">
+            <div class="loginBox">
+                <div>
+                    <p class="close">&times;</p>
+                </div>
+                <div>
+                    <div class="land"><input id="email" type="text" placeholder="email address">
+                        <input id="password" type="password" placeholder="password"></div>
+                    <div class="check"><input type="checkbox" name="" id=""><span>自动登录</span></div>
+                    <button id="getUser">登录</button>
+                </div>
+                <div></div>
+            </div>
+        </div>
+
+        <ul>
+            <!--功能区-->
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href="" class="icon-cog"></a>
+            </li>
+            <li><a href="">✉</a></li>
+            <li>
+                <a href=""></a>
+            </li>
+            <li><a href="">─</a></li>
+            <li>
+                <a href=""></a>
+            </li>
+            <li><a href="">&times;</a></li>
+        </ul>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="main">
+        <!-- 左边侧边栏 -->
+        <aside>
+            <ul class="cloud">
+                <li class="focus find"><a href="javascript:;">发现音乐</a></li>
+                <li><a href="javascript:;">播客</a></li>
+                <li><a href="javascript:;">视频</a></li>
+                <li><a href="javascript:;">关注</a></li>
+                <li><a href="javascript:;">直播</a></li>
+                <li><a href="javascript:;">私人FM</a></li>
+            </ul>
+            <!-- 我的音乐 -->
+            <h5 class="head">我的音乐</h5>
+            <ul class="myMusic">
+                <li><a href="javascript:;">本地与下载</a></li>
+                <li><a href="javascript:;">最近播放</a></li>
+                <li><a href="javascript:;">我的音乐云盘</a></li>
+                <li><a href="javascript:;">我的播客</a></li>
+                <li><a href="javascript:;">我的收藏</a></li>
+            </ul>
+            <!-- 创建的歌单 -->
+            <div class="playList">
+                <button class="head">创建的歌单</button>
+                <ul id="myList">
+                    <li><a href="javascript:;">♪我喜欢的音乐</a></li>
+                </ul>
+            </div>
+            <!-- 收藏的歌单 -->
+            <div class="playList">
+                <button class="head">收藏的歌单</button>
+                <ul id="collection">
+                    <!-- <li><a href="">♪音阙诗听</a></li>
+                    <li><a href="">♪提笔忆流年</a></li>
+                    <li><a href="">♪爱意随风起</a></li> -->
+                </ul>
+            </div>
+        </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 歌单广场 -->
+        <div class="square">
+            <main>
+                <!-- 导航栏 -->
+                <div class="nav_head">
+                    <ul>
+                        <li class="im_head"><a href="">个性推荐</a></li>
+                        <li><a href="">专属定制</a></li>
+                        <li><a href="">歌单</a></li>
+                        <li><a href="">排行榜</a></li>
+                        <li><a href="">歌手</a></li>
+                        <li><a href="">最新音乐</a></li>
+                    </ul>
+                </div>
+
+                <!-- 轮播图 -->
+                <div class="nav">
+                    <a href="javascript:;" class="left1">&lt;</a>
+                    <a href="javascript:;" class="right1">&gt;</a>
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><img src="img/nav1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/nav2.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/nav3.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/nav3.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/nav3.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                    <ol class="circle">
+                    </ol>
+                </div>
+                <!-- 推荐歌单 -->
+                <div class="recommend">
+                    <h3>推荐歌单&gt;</h3>
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><img src="img/day_recommend.jpg" alt="">
+                                <span class="date">24</span>
+                                <p>每日歌曲推荐</p>
+                                <div class="icon-play3"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="./img/list1.jpg" alt="">
+                                <p>今天从《两只老虎》听起|私人雷达</p>
+                                <span class="playCount"></span>
+                                <div class="icon-play3"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/list.jpg" alt="">
+                                <p>2022超好听网络热门歌曲</p>
+                                <span class="playCount"></span>
+                                <div class="icon-play3"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/list2.jpg" alt="">
+                                <p>世间所有的相遇都是久别重逢</p>
+                                <span class="playCount"></span>
+                                <div class="icon-play3"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/list3.jpg" alt="">
+                                <p>这世界为什么会有“我想见你”这种人间疾苦</p>
+                                <span class="playCount"></span>
+                                <div class="icon-play3"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/list4.jpg" alt="">
+                                <p>风吻过的口红，欲盖弥彰</p>
+                                <span class="playCount"></span>
+                                <div class="icon-play3"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/list5.jpg" alt="">
+                                <p>戴上耳机，这一刻世界只属于你</p>
+                                <span class="playCount"></span>
+                                <div class="icon-play3"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/list6.jpg" alt="">
+                                <p>世界灿烂盛大,也有人欢迎你回家</p>
+                                <span class="playCount"></span>
+                                <div class="icon-play3"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 热门播客 -->
+                <div class="podcast">
+                    <h3>热门播客&gt;</h3>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="icon-play3"></div>
+                                <img src="./img/xiao.jpg" alt="">
+                            </a>
+                            <div class="box">
+                                <p>魈角色演示</p>
+                                <span>游戏</span>
+                                <p><a href="">魈角色演示</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="icon-play3"></div>
+                                <img src="./img/wanye.jpg" alt="">
+                            </a>
+                            <div class="box">
+                                <p>枫原万叶演示</p>
+                                <span>游戏</span>
+                                <p><a href="">枫原万叶角色演示</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="icon-play3"></div>
+                                <img src="./img/zhongli.jpg" alt="">
+                            </a>
+                            <div class="box">
+                                <p>钟离角色演示</p>
+                                <span>游戏</span>
+                                <p><a href="">钟离角色演示</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="icon-play3"></div>
+                                <img src="./img/abeiduo.jpg" alt="">
+                            </a>
+                            <div class="box">
+                                <p>阿贝多角色演示</p>
+                                <span>游戏</span>
+                                <p><a href="">阿贝多角色演示</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="icon-play3"></div>
+                                <img src="./img/qin.jpg" alt="">
+                            </a>
+                            <div class="box">
+                                <p>琴角色演示</p>
+                                <span>游戏</span>
+                                <p><a href="">琴角色演示</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="icon-play3"></div>
+                                <img src="./img/ying.jpg" alt="">
+                            </a>
+                            <div class="box">
+                                <p>雷电将军角色演示</p>
+                                <span>游戏</span>
+                                <p><a href="">雷电将军角色演示</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 独家放送 -->
+                <div class="exclusive">
+                    <h3>独家放送&gt;</h3>
+                    <ul>
+                        <li>
+                            <a href=""><img src="./img/only1.png" alt="">
+                                <p>惊喜呈现|姜贞羽:热爱舞台上的每一个瞬间</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./img/only2.png" alt="">
+                                <p>《超级面对面》第252期Alan Walker:和Walkers一起遨游宇宙</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./img/only3.png" alt="">
+                                <p>惊喜呈现:Yamy郭颖携手二手玫瑰玩转港味复古风</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 最新音乐 -->
+                <div class="new">
+                    <h3>最新音乐&gt;</h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/abeiduo.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/babala.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/ganyu.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/hutao.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/keli.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/keqing.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/mona.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/paimeng.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/qin.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/qiqi.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/shenhe.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-play3"></div>
+                                <img src="./img/xiaogong.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+
+
+
+
+
+
+
+
+
+
+            <!-- 歌曲列表页 -->
+            <div id="songsList" class="hidden">
+                <div class="up">
+                    <div class="day hidden">
+                        <div>
+                            <div><img src="./img/dayup.jpg" alt=""><span></span></div>
+                            <div>
+                                <h1>每日歌曲推荐</h1>
+                                <p>根据你的音乐口味生成,每天6:00更新</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button><span class="icon-play3"></span>播放全部</button><button>+</button>
+                        </div>
+                    </div>
+                    <div class="listHead">
+                        <div>
+                            <img src="./img/keqing.jpg" alt="">
+                            <div class="detail">
+                                <p class="title">古风诗韵｜当古代诗词混搭现代音律</p>
+                                <p class="creator">2022/02/22创建</p>
+                                <div class="btn"><button>播放全部</button><button>收藏</button><button>分享</button><button>下载全部</button></div>
+                                <div class="details">
+                                    <p>标签</p>
+                                    <p><span>歌曲</span><span>播放</span></p>
+                                    <p>简介</p>
+                                </div>
+                            </div>
+                            <div class="listNav">
+                                <span>歌曲列表</span><span>评论</span><span>收藏者</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="down">
+                    <ul id="list">
+                        <!-- <li><span></span><span>音乐标题</span><span>歌手</span><span>专辑</span><span>时长</span><span>热度</span></li> -->
+                    </ul>
+                    <ul id="comments">
+                        <div>
+                            <div>
+                                <div class="textarea" contenteditable="true" placeholder=""></div>
+                                <div>
+                                    <a href="javascript:;">@</a>
+                                    <a href="javascript:;">#</a>
+                                    <span>评论</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>精彩评论</h3>
+                                <ul class="comments"></ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="playDetails hidden">
+        <header>
+            <div>
+                <div></div>
+                <!-- 左右箭头 -->
+                <a href="#" class="left">&lt;</a>
+                <a href="#" class="right">&gt;</a>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <button type="button" class="icon-search"></button>
+                    <input type="text" name="" id="">
+                </div>
+                <!-- 听歌识曲 -->
+                <a href="" class="identify"><span class="icon-mic"></span></a>
+            </div>
+
+            <div></div>
+
+            <ul>
+                <!--功能区-->
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href="" class="icon-cog"></a>
+                </li>
+                <li><a href="">✉</a></li>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li><a href="">─</a></li>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li><a href="">&times;</a></li>
+            </ul>
+        </header>
+
+        <div>
+            <div class="img"><img src="./img/xinhai.jpg" alt=""></div>
+            <div class="lyrics">
+                <div>
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+                <div>
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="other"></div>
+        </div>
+
+        <div>
+            <div></div>
+            <div class="songComments">
+                <h3>全部评论</h3>
+                <ul></ul>
+            </div>
+            <div></div>
+        </div>
+
+    </div>
+    <footer>
+        <!-- 底部播放器 -->
+        <div>
+            <div class="song">
+                <img src="./img/yunjin.jpg" alt="">
+                <div class="cover"></div>
+                <audio id="audio" src="" preload="auto"></audio>
+                <p><a href="javascript:viod(0)" class="name">神女劈观</a>
+                    <a href="javascript:viod(0)" class="singer">原神</a></p>
+            </div>
+
+            <div class="play">
+                <div>
+                    <ul>
+                        <li><span class="icon-menu"></span></li>
+                        <li><span class="icon-previous2"></span></li>
+                        <li><span class="icon-play3"></span></li>
+                        <li><span class="icon-next2"></span></li>
+                        <li><span>词</span></li>
+                    </ul>
+                    <div class="range">
+                        <div>
+                            <div class="thumb"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="function">
+                <div>
+                    <ul>
+                        <li><span>标准</span></li>
+                        <li></li>
+                        <li><span class="icon-volume-mute"></span>
+                            <div class="volume">
+                                <div>
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li></li>
+                        <li><span class="icon-menu"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+.podcast {
+    justify-self: center;
+    width: 82%;
+}
+
+.square h3 {
+    font-size: 20px;
+    height: 36px;
+}
+
+.podcast ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 14px;
+}
+
+.podcast li:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.podcast li {
+    position: relative;
+    display: flex;
+}
+
+.podcast div.icon-play3 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    color: rgb(235, 65, 65);
+    background-color: #fff;
+}
+
+.podcast li>a {
+    display: inline-block;
+}
+
+.podcast img {
+    width: 80px;
+    border-radius: 4px;
+}
+
+.podcast div.box {
+    display: inline-block;
+    height: 100%;
+    padding-left: 8px;
+}
+
+.box p {
+    height: 32px;
+    line-height: 32px;
+}
+
+.box p a {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+}
+
+.box span {
+    padding: 2px;
+    color: rgb(148, 148, 148);
+    font-size: 12px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.exclusive,
+.new {
+    justify-self: center;
+    width: 82%;
+}
+
+.exclusive ul {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exclusive ul li {
+    width: 32%;
+}
+
+.exclusive img {
+    width: 100%;
+}
+
+.exclusive p {
+    font-size: 14px;
+}
+
+.new img {
+    width: 48px;
+}
+
+.new ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.new li {
+    position: relative;
+}
+
+.new div.icon-play3 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    color: rgb(235, 65, 65);
+    background-color: #fff;
+}
