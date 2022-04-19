@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+    max-width: 96px;
+    height: 32px;
+    line-height: 32px;
+}
+
+#header>div:hover{
+    cursor: pointer;
+}
+
+#root{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 12px;
+    padding: 12px;
+    border: 2px solid rgb(96, 111, 180);
+    border-radius: 16px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+}
+
+#header>div{
+    height: 32px;
+    line-height: 32px;
+}
+
+#mm{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.mm{
+    width: 50%;
+    text-align: center;
+}
+
+.weeks,
+.days{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(7,1fr);
+    grid-column-gap: 4px;
+}
+
+.weeks{
+    background: linear-gradient(45deg,rgb(70,110,240),rgb(100,130,250));
+    color: rgb(249, 249, 249);
+    font-weight: 600;
+}
+
+.days{
+    grid-row-gap: 4px;
+}
+
+.fill{
+    color: rgb(160, 160, 160);
+}
+
+.toDay{
+    border: 2px solid rgb(80, 110, 240);
+    border-radius: 4px;
+}
+
+#footer{
+    width: 25%;
+    min-width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer>div:hover{
+    cursor: pointer;
+}
