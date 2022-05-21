@@ -196,9 +196,9 @@ function checkMonth(y, m) {
             tm = 30;
             break;
         case 2:
-            if (y % 4 === 0) {
-                if (y % 400 === 0) {
-                    tm = 28;
+            if (y % 4 == 0) {
+                if (y % 400 == 0|| y % 100 != 0) {
+                    tm = 29;
                 } else {
                     tm = 29;
                 }
