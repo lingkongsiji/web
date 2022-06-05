@@ -1,0 +1,86 @@
+#rank {
+    display: none;
+    position: relative;
+    top: 4vh;
+}
+
+.rank_list>li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 16vh;
+    margin: 2vh auto;
+    padding: 0 4vw;
+    border-radius: 2vh;
+    overflow: hidden;
+    background-color: white;
+}
+
+.rank_list_bd {
+    padding: 1vh 0;
+}
+
+.rank_list_bd li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.rank_list_bd li p {
+    max-width: 20vw;
+    height: 3vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: .8em;
+}
+
+.rank_list_bd li p.artist{
+    font-weight: 100;
+    color: rgb(125, 125, 125);
+}
+
+#rank h2 {
+    font-size: 2.4vh;
+}
+
+.rank_list_media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-height: 16vh;
+}
+
+.rank_list_media .count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    padding: 0 2vw;
+    border-radius: 1vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rank_list_media .count img {
+    width: 2vh;
+}
+
+.rank_list img {
+    width: 30vw;
+}
+
+.rank_list_media span.update,
+div.count{
+    position: absolute;
+    right: 2vw;
+    font-size: .8em;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+.rank_list_media span.update{
+    top: 1vh;
+}
+div.count{
+    bottom: 1vh;
+}

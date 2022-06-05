@@ -1,0 +1,210 @@
+#content {
+    position: relative;
+    top: 6vh;
+}
+
+
+#search {
+    position: relative;
+    top: 4vh;
+}
+
+#search .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search .search_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-search {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 40vw;
+    width: 5vh;
+    height: 5vh;
+}
+
+.show .icon-search {
+    left: 36vw;
+}
+
+.focus .icon-search {
+    left: 4vw;
+}
+
+#search svg {
+    width: 60%;
+    height: 60%;
+}
+
+#search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88vw;
+    height: 5vh;
+    border-radius: 2.5vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#search input {
+    width: 72vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 2vh;
+    text-align: center;
+}
+
+.search_cancel {
+    display: none;
+    font-weight: 700;
+}
+
+#search input.focus {
+    text-align: left;
+}
+
+.card {
+    display: none;
+    padding: 2vh 4vw;
+    overflow-wrap: break-word;
+}
+
+.card h2 {
+    font-size: 1em;
+}
+
+.history {
+    display: none;
+}
+
+p.label {
+    display: inline-block;
+    height: 2vh;
+    line-height: 2vh;
+    margin: 1vw;
+    padding: 1vh 2vh;
+    border-radius: 2vh;
+    font-size: .8em;
+    font-weight: 100;
+    background-color: white;
+}
+
+.search_result{
+    height: 8vh;
+}
+
+.search_result h3 {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.search_result p{
+    height: 4vh;
+    line-height: 4vh;
+    font-size: .8em;
+    font-weight: 100;
+    color: rgb(163, 163, 163);
+}
+
+#content .mod {
+    width: 100vw;
+    height: 28vh;
+}
+
+.mod div.txt {
+    font-size: .8em;
+    font-weight: 100;
+    color: rgb(100, 100, 100);
+}
+
+.mod div.cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+.mod .views{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2vh;
+    padding: 0 2vw;
+    border-radius: 1vh;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: .8em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mod .views img {
+    width:4vw;
+}
+
+.column .cover {
+    width: 64vw;
+    height: 32vw;
+}
+
+.mod .title {
+    position: relative;
+    padding: 0 2vw;
+    margin: 3vh 4vw 2vh;
+}
+
+.mod .title a {
+    font-size: .8em;
+    font-weight: 100;
+    color: rgb(100, 100, 100);
+}
+
+.title h2 {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.title a {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content .scroll {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    overflow: scroll;
+    padding: 0 2vw;
+}
+
+.scroll li {
+    margin: 0 1vw;
+}
+
+.scroll li img {
+    width: 30vw;
+}
+
+.column .cover img {
+    width: 64vw;
+}
+
+.scroll .txt {
+    padding: 1vh 2vw;
+}
