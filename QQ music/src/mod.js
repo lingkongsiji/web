@@ -41,6 +41,19 @@ class ListItem {
         this.item.className = className;
     }
 
+    setIcon(data) {
+        this.span= document.createElement('span');
+        this.icon= document.createElement('img');
+        this.icon.src = data.icon;
+        this.span.appendChild(this.icon);
+
+        this.title = document.createElement('p');
+        this.title.textContent = data.title;
+        this.span.appendChild(this.title);
+
+        this.cover.appendChild(this.span);
+    }
+
     render(container) {
         this.container=container;
         this.item.appendChild(this.cover);
@@ -79,11 +92,14 @@ async function getRecommendations(url) {
         listItem.render(scroll[1]);
     });
 
+    console.log(column);
+
     column.forEach(item => {
         let listItem = new ListItem(column);
         listItem.setClassName('column');
         listItem.coverImg.src = item.background;
         listItem.txt.innerText = item.description;
+        listItem.setIcon(item);
         listItem.render(scroll[2]);
     });
 }
