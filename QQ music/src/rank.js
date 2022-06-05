@@ -104,12 +104,22 @@ class RankList {
     }
 }
 
+import Sortable from 'sortablejs';
+
 async function getRank(url) {
     let res = await fetch(url + '/ranking');
     let data = await res.json();
+
     console.log(data);
+
+    const ranking = rank.querySelector('.rank_list');
+
+    new Sortable(ranking, {
+        animation: 150,
+        ghostClass: 'blue-background-class'
+    });
+
     data.forEach(item => {
-        const ranking = rank.querySelector('.rank_list');
         let rankList = new RankList(item);
         rankList.render(ranking);
     });
