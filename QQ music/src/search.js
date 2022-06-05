@@ -41,10 +41,10 @@ class Label {
 
 //搜索框
 search_bar.onfocus = function () {
-    if(search_results.style.display === 'block')return 0;
     search_box.classList.add('show');
     search.classList.add('focus');
     search_bar.classList.add('focus');
+    if(search_results.style.display === 'block')return 0;
     search_history.style.display = 'block';
     search_card.style.display = 'block';
     search_hot.style.display = 'block';
