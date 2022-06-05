@@ -60,7 +60,6 @@ async function getRecommendations(url) {
     for (let i = 0; i < mod.length; i++) {
         scroll[i] = mod[i].querySelector('.scroll');
     }
-    console.log(data);
 
     let { column, offical, tatsujin } = data;
 
