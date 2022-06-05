@@ -44,7 +44,7 @@ search_bar.onfocus = function () {
     search_box.classList.add('show');
     search.classList.add('focus');
     search_bar.classList.add('focus');
-    if(search_results.style.display === 'block')return 0;
+    if (search_results.style.display === 'block') return 0;
     search_history.style.display = 'block';
     search_card.style.display = 'block';
     search_hot.style.display = 'block';
@@ -89,7 +89,6 @@ import { connect } from './rank'
 async function getSearch(url, keyword) {
     let res = await fetch(url + '/search?keyword=' + keyword);
     let data = await res.json();
-    console.log(data);
 
     search_hot.style.display = 'none';
     search_history.style.display = 'none';
@@ -120,8 +119,9 @@ async function getSearch(url, keyword) {
 function history_add() {
     search_history.innerHTML = '';
     let h2 = document.createElement('h2');
-    h2.textContent = '搜索历史';
+    h2.innerHTML = `搜索历史<span class="delete">&times;</span>`;
     search_history.appendChild(h2);
+
     searchHistory.forEach(i => {
         let p = document.createElement('p');
         p.textContent = i;
@@ -129,6 +129,12 @@ function history_add() {
         p.addEventListener('click', getSearch.bind(null, url, i));
         search_history.appendChild(p);
     });
+
+    h2.querySelector('span').addEventListener('click', () => {
+        search_history.innerHTML = '';
+        localStorage.setItem('music_search_history', JSON.stringify([]));//清除存缓
+        history_add();
+    })
 }
 
 if (searchHistory.length > 0) {

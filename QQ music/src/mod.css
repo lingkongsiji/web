@@ -82,8 +82,12 @@
     font-size: 1em;
 }
 
-.history {
+.card .history {
     display: none;
+}
+
+#search .history h2>span{
+    float: right;
 }
 
 p.label {
