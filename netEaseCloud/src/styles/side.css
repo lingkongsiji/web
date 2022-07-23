@@ -1,0 +1,53 @@
+.side-header {
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    padding: 0 2vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.side-content {
+    display: flex;flex-direction: column;
+    grid-row: 3/25;
+    overflow: scroll;
+    padding: 0 2vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.side-header img {
+    height: 6vh;
+    border-radius: 3vh;
+}
+
+.side-header>div {
+    display: flex;
+    align-items: center;
+}
+
+.side-header>div.user{
+    flex-grow: .4;
+    cursor: pointer;
+}
+
+.side-header>div.content{
+    flex-direction: row-reverse;
+    flex-grow: .6;
+}
+
+.side-header .user-name {
+    padding: 0 2vh;
+    width: 100%;
+}
+
+.side-vip{
+    height: 14vh;
+    border-radius: 2vh;
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+
+.side-card{
+    border-radius: 2vh;
+    margin-top: 2vh;
+    background: rgb(255, 255, 255);
+}
