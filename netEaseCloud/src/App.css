@@ -1,0 +1,77 @@
+input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.searchIcon,
+input::placeholder {
+    color: rgb(152, 152, 152);
+}
+
+.dynamic p {
+    color: rgb(152, 152, 152);
+    text-align: center;
+    font-size: .6rem;
+}
+
+.dynamic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 1vh 0;
+}
+
+.dynamic-item>div{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    width: 100%;
+}
+
+.dynamic-item-header {
+   
+}
+.dynamic-item-header>div{
+    position: relative;
+    width: 100%;
+    height: 6vh;
+}
+
+.dynamic-item .center{
+    grid-column: 2/8;
+    display: flex;
+    align-items: center;
+}
+
+.dynamic-item p.center{
+    color: rgb(66, 66, 66);
+    font-size: .8rem;
+}
+
+.dynamic-item img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3vh;
+}
+
+.dynamic-item>div div.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamic-item-footer {
+    color: rgb(125, 125, 125);
+    font-size: .6rem;
+}
+
+.dynamic-item-footer div.center span{
+    padding-right: 2rem;
+}
