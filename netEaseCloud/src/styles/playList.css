@@ -1,0 +1,38 @@
+.play-list-item {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 1vh 0;
+}
+
+.play-list-item:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.play-list-item .cover {
+    height: 100%;
+}
+
+.play-list-item .cover img {
+    height: 100%;
+    border-radius: .4rem;
+}
+
+.play-list-item .info-title {
+    width: 100%;
+    color: rgb(60, 60, 60);
+    padding: 0 .4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.play-list-item .info-text {
+    font-size: .6rem;
+    color: rgb(88, 88, 88);
+    padding: .2rem .4rem;
+}

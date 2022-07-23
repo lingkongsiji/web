@@ -80,12 +80,12 @@ const ref = raw => {
     // raw是待处理的对象
     const r = {
         // 初始化值
-        get value () {
+        get value() {
             track(r, 'value');
             return raw;
         },
         // 设置值
-        set value (newVal) {
+        set value(newVal) {
             raw = newVal;
             trigger(r, 'value');
         }
@@ -136,3 +136,27 @@ product.quantity = 5;
 console.log(total_.value, salePrice.value);
 product.price = 30;
 console.log(total_.value, salePrice.value);
+
+const watch = (getter, cb) => {//监听器
+    // getter是待监听的属性,cb是回调函数
+    effect(() => {
+        const newValue = getter();
+        cb(newValue);
+    }
+    )
+}
+
+let count_ = ref(0);
+watch(() => count_.value, (newValue) => {
+    console.log(`count: ${newValue}`);
+}
+)
+count_.value++;
+
+let salePrice_ = ref({ price: 10, quantity: 2 });
+watch(() => salePrice_.value.price, (newValue) => {
+    console.log(`salePrice price: ${newValue}`);
+})
+salePrice_.value.price = 20;
+salePrice_.value.quantity = 3;
+console.log(salePrice_.value);
