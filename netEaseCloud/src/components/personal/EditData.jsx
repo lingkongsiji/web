@@ -44,7 +44,9 @@ export default function EditData() {
                 <Item title='标签' value={label.join(' ')} />
                 {introduction && <Item title='简介' value={introduction} />}
             </div>
-            <div className='personal-settings'></div>
+            <div className='personal-settings'>
+                
+            </div>
             <div className='account-settings'></div>
         </div>
     )
